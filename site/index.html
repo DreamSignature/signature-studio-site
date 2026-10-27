@@ -1,0 +1,971 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Signature Studio, studio créatif francophone sur abonnement</title>
+<meta name="description" content="Présentations, rapports et documents institutionnels conçus par une équipe francophone, sur abonnement mensuel. Pour les agences, cabinets, ONG et entreprises. Test : une présentation relookée en 3 jours ouvrés, 290 €.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Signature Studio">
+<meta property="og:title" content="Signature Studio : votre équipe créative premium, sans recrutement">
+<meta property="og:description" content="Présentations, rapports et documents institutionnels conçus par une équipe francophone, sur abonnement mensuel. Pour les agences, cabinets, ONG et entreprises. Test : une présentation relookée en 3 jours ouvrés, 290 €.">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://signaturestudio-website.netlify.app/">
+<meta property="og:image" content="https://signaturestudio-website.netlify.app/apercu.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Signature Studio : votre équipe créative premium, sans recrutement">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://signaturestudio-website.netlify.app/">
+<meta name="theme-color" content="#0f3d3b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230F3D3B'/%3E%3Cpath d='M15 33V15h18' fill='none' stroke='%23E8891C' stroke-width='5'/%3E%3Crect x='37' y='37' width='12' height='12' fill='%23F3EDE1'/%3E%3C/svg%3E">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "Signature Studio", "url": "https://signaturestudio-website.netlify.app/", "description": "Présentations, rapports et documents institutionnels conçus par une équipe francophone, sur abonnement mensuel. Pour les agences, cabinets, ONG et entreprises. Test : une présentation relookée en 3 jours ouvrés, 290 €.", "email": "contact@dream-signature.com", "telephone": "+226 57 46 99 47", "areaServed": ["FR", "BE", "CH", "LU", "CA"], "address": {"@type": "PostalAddress", "addressLocality": "Ouagadougou", "addressCountry": "BF"}, "parentOrganization": {"@type": "Organization", "name": "Dream Signature"}}</script>
+<style>
+:root { color-scheme: light; padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+body { margin: 0; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Spectral:ital,wght@0,300;0,400;0,500;1,300&display=swap">
+<style>
+/* Mise en page : une table de montage. On ouvre sur une diapositive avant/après posée entre des traits de coupe,
+   puis des rubriques sobres, alignées à gauche. Sarcelle et orange de Dream Signature, papier clair. */
+:root {
+  --paper: #f6f6f2;
+  --sheet: #ffffff;
+  --ink: #12302e;
+  --muted: #536560;
+  --rule: #dadfd8;
+  --tint: #e9eeea;
+  --orange: #e8891c;
+  --orange-ink: #93500a;
+  --on-orange: #10302e;
+  --btn: #0f3d3b;
+  --btn-hover: #0a2e2c;
+  --on-btn: #f7f2e7;
+  --check: #0f3d3b;
+  --focus: #0f3d3b;
+  --band: #0f3d3b;
+  --band-2: #0c3331;
+  --band-3: #134744;
+  --on-band: #f3ede1;
+  --band-muted: #a9c3be;
+  --band-rule: #2a5754;
+  --foot: #0a2826;
+  --on-foot: #e9e3d6;
+  --foot-muted: #9fb7b2;
+  --foot-rule: #21423f;
+  --err: #b4261c;
+  --shadow: 0 1px 0 rgba(16, 48, 46, .06), 0 24px 48px -28px rgba(16, 48, 46, .55);
+
+  /* Diapositives d'exemple : elles gardent leurs couleurs dans les deux thèmes. */
+  --office-bg: #ffffff;
+  --office-ink: #1a1a1a;
+  --office-title: #1f3864;
+  --office-bullet: #4472c4;
+  --office-muted: #7f7f7f;
+  --ngo-bg: #12384a;
+  --ngo-fg: #f6f1e7;
+  --ngo-accent: #f4b740;
+  --ngo-muted: #a9c3cc;
+  --ngo-rule: #2c5468;
+  --cons-bg: #fbfaf6;
+  --cons-ink: #1c2740;
+  --cons-muted: #5f6879;
+  --cons-rule: #dcdfe7;
+  --cons-b1: #c8d5ef;
+  --cons-b2: #2f5aa8;
+  --cons-b3: #3f63a8;
+  --cons-b4: #1c2740;
+  --cons-gold: #c8961e;
+  --cons-on: #ffffff;
+
+  --f-display: "Spectral", Georgia, "Times New Roman", serif;
+  --f-text: "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --f-office: Calibri, Carlito, "Liberation Sans", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0b1716; --sheet: #112321; --ink: #ebe5d9; --muted: #a1b2ad; --rule: #223634; --tint: #15292a;
+    --orange: #f09b2e; --orange-ink: #f2a64a; --on-orange: #0b1716;
+    --btn: #f09b2e; --btn-hover: #f5ae55; --on-btn: #0b1716; --check: #f09b2e; --focus: #f09b2e;
+    --band: #0f3b39; --band-2: #0b2e2c; --band-3: #134542; --on-band: #ede7da; --band-muted: #a2bcb7; --band-rule: #2a5653;
+    --foot: #061110; --on-foot: #e6e0d3; --foot-muted: #93aaa5; --foot-rule: #1a302e; --err: #ff8a7d;
+    --shadow: 0 1px 0 rgba(0, 0, 0, .4), 0 24px 48px -28px rgba(0, 0, 0, .85);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0b1716; --sheet: #112321; --ink: #ebe5d9; --muted: #a1b2ad; --rule: #223634; --tint: #15292a;
+  --orange: #f09b2e; --orange-ink: #f2a64a; --on-orange: #0b1716;
+  --btn: #f09b2e; --btn-hover: #f5ae55; --on-btn: #0b1716; --check: #f09b2e; --focus: #f09b2e;
+  --band: #0f3b39; --band-2: #0b2e2c; --band-3: #134542; --on-band: #ede7da; --band-muted: #a2bcb7; --band-rule: #2a5653;
+  --foot: #061110; --on-foot: #e6e0d3; --foot-muted: #93aaa5; --foot-rule: #1a302e; --err: #ff8a7d;
+  --shadow: 0 1px 0 rgba(0, 0, 0, .4), 0 24px 48px -28px rgba(0, 0, 0, .85);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { background: var(--paper); color: var(--ink); font-family: var(--f-text); font-size: 17px; line-height: 1.6; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--paper); }
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+p, h1, h2, h3, ul, ol, figure, fieldset, dl, dd { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+h1, h2, h3 { font-weight: inherit; text-wrap: balance; }
+h1, .h2, .price, .n-big, .n-head, .c-head, .steps li::before { font-variant-numeric: lining-nums; }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
+.sel { user-select: all; -webkit-user-select: all; }
+.sr { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
+.wrap { max-width: 1180px; margin-inline: auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.sec { padding-block: clamp(56px, 7vw, 96px); scroll-margin-top: 64px; }
+.sec + .sec { border-top: 1px solid var(--rule); }
+.band { background: var(--band); color: var(--on-band); --focus: var(--orange); border-top: 0 !important; }
+.band + .sec { border-top: 0; }
+.stack { display: grid; gap: clamp(32px, 4vw, 48px); }
+.head { display: grid; gap: 14px; max-width: 720px; }
+.h2 { font-family: var(--f-display); font-weight: 400; font-size: clamp(31px, 3.5vw, 45px); line-height: 1.08; letter-spacing: -0.012em; }
+.lead { font-size: clamp(17px, 1.6vw, 19px); line-height: 1.55; color: var(--muted); max-width: 60ch; }
+.band .lead { color: var(--band-muted); }
+.note { font-size: 15px; color: var(--muted); max-width: 70ch; }
+
+/* Boutons */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 0 22px; border-radius: 4px; border: 1px solid transparent; font-weight: 600; font-size: 16px; line-height: 1.2; text-decoration: none; text-align: center; cursor: pointer; transition: background-color .15s ease, color .15s ease, border-color .15s ease; }
+.btn-main { background: var(--btn); color: var(--on-btn); }
+.btn-main:hover { background: var(--btn-hover); }
+.btn-line { background: transparent; color: var(--ink); border-color: var(--ink); }
+.btn-line:hover { background: var(--tint); }
+.btn-sm { min-height: 40px; padding: 0 16px; font-size: 15px; }
+.band .btn-main { background: var(--orange); color: var(--on-orange); }
+.band .btn-main:hover { filter: brightness(1.06); }
+.band .btn-line { color: var(--on-band); border-color: var(--band-muted); }
+.band .btn-line:hover { background: var(--band-3); }
+
+/* En-tête */
+.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--paper); border-bottom: 1px solid var(--rule); }
+@supports (backdrop-filter: blur(8px)) { .top { background: color-mix(in srgb, var(--paper) 90%, transparent); backdrop-filter: blur(10px); } }
+.top .wrap { display: flex; align-items: center; gap: 28px; min-height: 64px; }
+.brand { display: inline-flex; align-items: center; gap: 11px; text-decoration: none; font-family: var(--f-display); font-size: 21px; font-weight: 500; letter-spacing: -0.005em; white-space: nowrap; }
+.mk { position: relative; width: 14px; height: 14px; flex: none; }
+.mk::before { content: ""; position: absolute; inset: 0; border-top: 2px solid var(--orange); border-left: 2px solid var(--orange); }
+.mk::after { content: ""; position: absolute; right: 0; bottom: 0; width: 5px; height: 5px; background: var(--ink); }
+.nav { display: flex; gap: 24px; margin-left: auto; font-size: 15px; }
+.nav a { text-decoration: none; color: var(--muted); }
+.nav a:hover { color: var(--ink); }
+.top .btn { flex: none; }
+@media (max-width: 880px) { .nav { display: none; } .top .btn { margin-left: auto; } }
+@media (max-width: 380px) { .brand { font-size: 19px; } .top .btn { padding: 0 12px; } }
+
+/* Ouverture */
+.hero { padding-block: clamp(36px, 6vw, 84px) clamp(40px, 5vw, 72px); }
+.hero .wrap { display: grid; gap: clamp(36px, 5vw, 64px); grid-template-columns: minmax(0, 1fr); align-items: center; }
+@media (min-width: 1000px) { .hero .wrap { grid-template-columns: minmax(0, .9fr) minmax(0, 1.2fr); } }
+.hero-txt { display: grid; gap: 22px; min-width: 0; }
+.hero h1 { font-family: var(--f-display); font-weight: 300; font-size: clamp(42px, 5.5vw, 72px); line-height: 1.02; letter-spacing: -0.022em; }
+.ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+.hero-note { font-size: 15px; color: var(--muted); max-width: 50ch; padding-top: 18px; border-top: 1px solid var(--rule); }
+
+.show { display: grid; gap: 12px; min-width: 0; }
+.show-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; }
+.tabs { display: flex; flex-wrap: wrap; gap: 6px; }
+.tab { border: 1px solid var(--rule); background: transparent; border-radius: 999px; padding: 6px 14px; font-size: 14px; line-height: 1.3; cursor: pointer; color: var(--muted); }
+.tab:hover { color: var(--ink); border-color: var(--muted); }
+.tab[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+.hint { font-size: 13px; color: var(--muted); }
+.cap { font-size: 13px; color: var(--muted); }
+
+/* Traits de coupe ; la zone de marge du haut (« slug ») porte les mentions Avant / Après */
+.crop { --pt: 18px; position: relative; padding: var(--pt) 18px 18px; }
+.crop.slug { --pt: 30px; }
+.slug-l, .slug-r { position: absolute; top: 6px; font-size: 12px; font-weight: 600; line-height: 1.4; letter-spacing: .03em; color: var(--muted); pointer-events: none; }
+.slug-l { left: 34px; } .slug-r { right: 34px; }
+.cm { position: absolute; width: 18px; height: 18px; pointer-events: none; }
+.cm::before, .cm::after { content: ""; position: absolute; background: var(--orange); }
+.cm::before { width: 12px; height: 1.5px; }
+.cm::after { width: 1.5px; height: 12px; }
+.cm.tl { top: calc(var(--pt) - 18px); left: 0; } .cm.tl::before { top: 17.25px; left: 0; } .cm.tl::after { left: 17.25px; top: 0; }
+.cm.tr { top: calc(var(--pt) - 18px); right: 0; } .cm.tr::before { top: 17.25px; right: 0; } .cm.tr::after { right: 17.25px; top: 0; }
+.cm.bl { bottom: 0; left: 0; } .cm.bl::before { bottom: 17.25px; left: 0; } .cm.bl::after { left: 17.25px; bottom: 0; }
+.cm.br { bottom: 0; right: 0; } .cm.br::before { bottom: 17.25px; right: 0; } .cm.br::after { right: 17.25px; bottom: 0; }
+
+/* Comparateur avant / après */
+.cmp { position: relative; width: 100%; max-width: 100%; aspect-ratio: 16 / 9; container-type: inline-size; overflow: hidden; background: var(--office-bg); box-shadow: var(--shadow); touch-action: pan-y; cursor: ew-resize; user-select: none; -webkit-user-select: none; --pos: 50%; }
+.slide { position: absolute; inset: 0; overflow: hidden; }
+.slide.after { clip-path: inset(0 0 0 var(--pos)); }
+.divider { position: absolute; top: 0; bottom: 0; left: var(--pos); width: 2px; margin-left: -1px; background: var(--orange); pointer-events: none; }
+.knob { position: absolute; left: 50%; top: 50%; width: 38px; height: 38px; margin: -19px 0 0 -19px; border-radius: 50%; background: var(--orange); box-shadow: 0 2px 10px rgba(0, 0, 0, .28); }
+.knob::before, .knob::after { content: ""; position: absolute; top: 50%; margin-top: -5px; border: 5px solid transparent; }
+.knob::before { left: 7px; border-right: 6px solid var(--on-orange); border-left-width: 0; }
+.knob::after { right: 7px; border-left: 6px solid var(--on-orange); border-right-width: 0; }
+.cmp:has(.cmp-range:focus-visible) .knob { outline: 3px solid var(--focus); outline-offset: 3px; }
+
+/* Diapositive « avant » : thème bureautique par défaut */
+.s-office { background: var(--office-bg); color: var(--office-ink); font-family: var(--f-office); padding: 5.4cqw 6.2cqw 3.6cqw; display: flex; flex-direction: column; }
+.o-title { font-size: 4.2cqw; line-height: 1.1; color: var(--office-title); margin-bottom: 2.4cqw; }
+.o-list { display: grid; gap: .95cqw; font-size: 2cqw; line-height: 1.22; }
+.o-list li { position: relative; padding-left: 2.3cqw; }
+.o-list li::before { content: ""; position: absolute; left: 0; top: .42em; width: .52em; height: .52em; background: var(--office-bullet); }
+.o-list li.sub { padding-left: 5cqw; font-size: 1.8cqw; }
+.o-list li.sub::before { left: 2.4cqw; top: .62em; width: .75em; height: max(1px, .12em); background: var(--office-ink); }
+.o-foot { margin-top: auto; display: flex; justify-content: space-between; font-size: 1.45cqw; color: var(--office-muted); }
+
+/* Diapositives « après » : deux colonnes, la colonne de droite se lit seule quand le curseur est au milieu */
+.s-ngo, .s-cons { display: grid; grid-template-columns: 44% 56%; font-family: var(--f-text); }
+.s-ngo > div, .s-cons > div { display: grid; min-width: 0; padding: 4.4cqw 4cqw 3.4cqw 5.4cqw; }
+.s-ngo > div + div, .s-cons > div + div { padding: 4.4cqw 5.4cqw 3.4cqw 7cqw; }
+.k-top { font-size: 1.45cqw; letter-spacing: .1em; text-transform: uppercase; }
+.k-foot { display: flex; justify-content: space-between; gap: 2cqw; font-size: 1.3cqw; }
+
+/* Rapport d'ONG */
+.s-ngo { background: var(--ngo-bg); color: var(--ngo-fg); }
+.n-left { grid-template-rows: auto 1fr auto auto; gap: 1.4cqw; background: var(--ngo-accent); color: var(--ngo-bg); }
+.n-big { align-self: end; font-family: var(--f-display); font-weight: 300; font-size: 10.5cqw; line-height: .95; letter-spacing: -0.03em; font-variant-numeric: lining-nums; }
+.n-bigl { max-width: 16ch; font-size: 2.1cqw; line-height: 1.25; font-weight: 600; }
+.n-right { grid-template-rows: auto auto 1fr auto; gap: 2cqw; }
+.n-right .k-top, .n-right .k-foot { color: var(--ngo-muted); }
+.n-head { font-family: var(--f-display); font-weight: 300; font-size: 3.6cqw; line-height: 1.1; letter-spacing: -0.01em; }
+.n-figs { display: grid; align-content: center; }
+.n-figs li { display: grid; grid-template-columns: 11cqw minmax(0, 1fr); gap: 1.4cqw; align-items: center; padding-block: 1.25cqw; border-top: 1px solid var(--ngo-rule); }
+.n-figs b { font-weight: 700; font-size: 4cqw; line-height: 1; font-variant-numeric: tabular-nums; letter-spacing: -0.02em; white-space: nowrap; }
+.n-figs span { font-size: 1.6cqw; line-height: 1.3; color: var(--ngo-muted); }
+.gauge { position: relative; display: block; grid-column: 2; height: .7cqw; margin-top: -0.4cqw; border-radius: 1cqw; background: var(--ngo-rule); }
+.gauge i { position: absolute; inset: 0 auto 0 0; width: 94%; border-radius: inherit; background: var(--ngo-accent); }
+.gauge em { position: absolute; top: -0.5cqw; bottom: -0.5cqw; left: 90%; width: 2px; background: var(--ngo-fg); }
+
+/* Proposition technique */
+.s-cons { background: var(--cons-bg); color: var(--cons-ink); }
+.c-left { grid-template-rows: auto auto 1fr auto; gap: 2.4cqw; background: var(--cons-b4); color: var(--cons-on); }
+.c-left .k-top, .c-left .k-foot { color: var(--cons-b1); }
+.c-head { font-family: var(--f-display); font-weight: 300; font-size: 3.9cqw; line-height: 1.1; letter-spacing: -0.01em; }
+.c-miles { align-self: end; display: grid; gap: 1.3cqw; font-size: 1.55cqw; line-height: 1.3; }
+.c-miles li { display: grid; grid-template-columns: 1.2cqw 4cqw minmax(0, 1fr); gap: 1cqw; align-items: baseline; }
+.c-miles li::before { content: ""; width: 1cqw; height: 1cqw; background: var(--cons-gold); transform: rotate(45deg); }
+.c-miles b { font-weight: 700; font-variant-numeric: tabular-nums; color: var(--cons-gold); }
+.c-right { grid-template-rows: auto 1fr auto; gap: 2cqw; }
+.c-right .k-top, .c-right .k-foot { color: var(--cons-muted); }
+.gantt { align-self: center; display: grid; grid-template-columns: 27% repeat(12, minmax(0, 1fr)); row-gap: 1.3cqw; column-gap: .25cqw; align-items: center; font-size: 1.4cqw; }
+.g-wk { text-align: center; color: var(--cons-muted); font-size: 1.1cqw; font-variant-numeric: tabular-nums; }
+.g-lab { grid-column: 1; font-weight: 600; padding-right: .8cqw; line-height: 1.15; white-space: nowrap; }
+.g-bar { height: 2.6cqw; display: flex; align-items: center; padding: 0 .9cqw; border-radius: .4cqw; font-size: 1.2cqw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.g-1 { background: var(--cons-b1); color: var(--cons-ink); }
+.g-2 { background: var(--cons-b2); color: var(--cons-on); }
+.g-3 { background: var(--cons-b3); color: var(--cons-on); }
+.g-4 { background: var(--cons-b4); color: var(--cons-on); }
+
+/* Ce que nous concevons */
+.trio { display: grid; gap: clamp(28px, 3vw, 40px); grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 860px) { .trio { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.trio article { display: grid; gap: 14px; align-content: start; padding-top: 22px; border-top: 1px solid var(--ink); min-width: 0; }
+.trio h3, .duo h3 { font-size: 19px; font-weight: 600; line-height: 1.3; }
+.trio p { color: var(--muted); }
+.fmt { display: flex; align-items: flex-end; gap: 14px; min-height: 58px; }
+.fmt i { display: block; border: 1.5px solid var(--ink); background: var(--sheet); }
+.fmt .f169 { width: 86px; aspect-ratio: 16 / 9; }
+.fmt .fa4 { width: 40px; aspect-ratio: 210 / 297; box-shadow: 5px -5px 0 -1.5px var(--sheet), 5px -5px 0 0 var(--ink); }
+.fmt .fwl { width: 64px; aspect-ratio: 4 / 3; border-style: dashed; }
+.spec { font-size: 14px; color: var(--orange-ink); font-variant-numeric: tabular-nums; }
+
+/* Pour qui, pourquoi */
+.duo { display: grid; gap: 28px 48px; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 760px) { .duo { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.duo article { display: grid; gap: 8px; align-content: start; padding-top: 18px; border-top: 1px solid var(--rule); min-width: 0; }
+.duo p { color: var(--muted); }
+
+/* Méthode */
+.method { display: grid; gap: clamp(36px, 5vw, 64px); grid-template-columns: minmax(0, 1fr); align-items: start; }
+@media (min-width: 980px) { .method { grid-template-columns: minmax(0, 1fr) minmax(0, .95fr); } }
+.steps { counter-reset: st; display: grid; min-width: 0; }
+.steps li { counter-increment: st; display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 14px; padding-block: 16px; border-top: 1px solid var(--band-rule); }
+.steps li:last-child { border-bottom: 1px solid var(--band-rule); }
+.steps li::before { content: counter(st); font-family: var(--f-display); font-size: 28px; line-height: 1; color: var(--orange); font-variant-numeric: lining-nums; }
+.steps h3 { font-size: 17px; font-weight: 600; line-height: 1.35; }
+.steps p { margin-top: 3px; font-size: 15.5px; color: var(--band-muted); }
+.queue { display: grid; gap: 16px; padding: clamp(20px, 3vw, 28px); border: 1px solid var(--band-rule); border-radius: 6px; background: var(--band-2); min-width: 0; }
+.queue h3 { font-family: var(--f-display); font-weight: 400; font-size: 26px; line-height: 1.15; }
+.queue > p { color: var(--band-muted); font-size: 15.5px; }
+.q-cap { font-size: 13px; color: var(--band-muted); }
+.q-list { display: grid; gap: 8px; }
+.q-list li { display: grid; grid-template-columns: 108px minmax(0, 1fr); gap: 12px; align-items: center; padding: 10px 12px; border-radius: 4px; background: var(--band-3); font-size: 15px; line-height: 1.35; }
+.q-list li.more { grid-template-columns: minmax(0, 1fr); background: transparent; border: 1px dashed var(--band-rule); color: var(--band-muted); }
+.pill { justify-self: start; padding: 3px 9px; border-radius: 999px; font-size: 12px; font-weight: 600; line-height: 1.4; white-space: nowrap; }
+.pill.on { background: var(--orange); color: var(--on-orange); }
+.pill.wait { border: 1px solid var(--band-muted); color: var(--band-muted); }
+
+/* Formules */
+.plans { display: grid; gap: 18px; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 920px) { .plans { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.plan { display: grid; grid-template-rows: auto auto auto 1fr auto; gap: 16px; padding: 28px 24px 24px; background: var(--sheet); border: 1px solid var(--rule); border-radius: 6px; min-width: 0; }
+.plan h3 { font-size: 19px; font-weight: 600; }
+.plan .for { font-size: 15px; color: var(--muted); }
+.price { font-family: var(--f-display); font-weight: 300; font-size: 52px; line-height: 1; letter-spacing: -0.02em; font-variant-numeric: lining-nums; }
+.price small { font-family: var(--f-text); font-size: 15px; font-weight: 400; letter-spacing: 0; color: var(--muted); margin-left: 6px; }
+.feat { display: grid; gap: 9px; align-content: start; padding-top: 16px; border-top: 1px solid var(--rule); font-size: 15.5px; line-height: 1.45; }
+.feat li { position: relative; padding-left: 24px; }
+.feat li::before { content: ""; position: absolute; left: 3px; top: .38em; width: 10px; height: 5px; border-left: 2px solid var(--check); border-bottom: 2px solid var(--check); transform: rotate(-45deg); }
+.plan .btn { width: 100%; }
+
+/* Le test */
+.test { background: var(--sheet); box-shadow: var(--shadow); }
+.test-in { display: grid; gap: 28px; grid-template-columns: minmax(0, 1fr); padding: clamp(24px, 4vw, 48px); align-items: center; }
+@media (min-width: 900px) { .test-in { grid-template-columns: minmax(0, 1.35fr) minmax(0, .65fr); } }
+.test-txt { display: grid; gap: 14px; min-width: 0; }
+.kicker { font-size: 15px; font-weight: 600; color: var(--orange-ink); }
+.test-txt p { color: var(--muted); max-width: 58ch; }
+.test-buy { display: grid; gap: 14px; justify-items: start; padding-left: 0; min-width: 0; }
+@media (min-width: 900px) { .test-buy { padding-left: 32px; border-left: 1px solid var(--rule); } }
+.test-buy .price { font-size: 64px; }
+
+/* Questions */
+.faq { display: grid; max-width: 820px; }
+.faq details { border-top: 1px solid var(--rule); }
+.faq details:last-child { border-bottom: 1px solid var(--rule); }
+.faq summary { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-block: 18px; cursor: pointer; list-style: none; font-weight: 600; font-size: 17px; line-height: 1.4; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: ""; flex: none; width: 12px; height: 12px; background: linear-gradient(var(--ink), var(--ink)) center / 12px 2px no-repeat, linear-gradient(var(--ink), var(--ink)) center / 2px 12px no-repeat; transition: transform .2s ease; }
+.faq details[open] summary::after { transform: rotate(45deg); }
+.faq details p { padding-bottom: 20px; color: var(--muted); max-width: 68ch; }
+@media (prefers-reduced-motion: reduce) { .faq summary::after { transition: none; } }
+
+/* Demande */
+.ask { display: grid; gap: clamp(32px, 5vw, 64px); grid-template-columns: minmax(0, 1fr); align-items: start; }
+@media (min-width: 980px) { .ask { grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); } }
+.ask-side { display: grid; gap: 22px; min-width: 0; }
+.direct { display: grid; gap: 14px; padding-top: 20px; border-top: 1px solid var(--band-rule); }
+.direct dt { font-size: 13px; color: var(--band-muted); }
+.direct dd { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; font-size: 18px; font-weight: 600; }
+.direct a { text-decoration: none; }
+.direct a:hover { text-decoration: underline; }
+.mini { border: 1px solid var(--band-muted); background: transparent; color: var(--on-band); border-radius: 3px; padding: 3px 9px; font-size: 13px; font-weight: 500; cursor: pointer; }
+.mini:hover { background: var(--band-3); }
+.form { display: grid; gap: 18px; padding: clamp(20px, 3vw, 32px); background: var(--sheet); color: var(--ink); border-radius: 6px; --focus: var(--btn); min-width: 0; }
+.form fieldset { border: 0; padding: 0; min-width: 0; }
+.form legend, .form label { display: block; font-size: 14px; font-weight: 600; margin-bottom: 7px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chips input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.chips label { margin: 0; padding: 7px 14px; border: 1px solid var(--rule); border-radius: 999px; font-size: 14px; font-weight: 500; cursor: pointer; }
+.chips label:hover { border-color: var(--muted); }
+.chips input:checked + label { background: var(--btn); border-color: var(--btn); color: var(--on-btn); }
+.chips input:focus-visible + label { outline: 2px solid var(--focus); outline-offset: 2px; }
+.row2 { display: grid; gap: 18px; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 620px) { .row2 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.field { min-width: 0; }
+.form input[type="text"], .form input[type="email"], .form select, .form textarea { width: 100%; padding: 11px 12px; border: 1px solid var(--rule); border-radius: 4px; background: var(--paper); font-size: 16px; line-height: 1.4; }
+.form textarea { min-height: 96px; resize: vertical; }
+.form input:focus-visible, .form select:focus-visible, .form textarea:focus-visible { outline: 2px solid var(--focus); outline-offset: 0; border-color: var(--focus); }
+.form [aria-invalid="true"] { border-color: var(--err); }
+.err { margin-top: 6px; font-size: 14px; color: var(--err); }
+.preview { display: grid; gap: 7px; }
+.preview pre { margin: 0; padding: 12px 14px; max-height: 180px; overflow: auto; white-space: pre-wrap; word-break: break-word; background: var(--tint); border-radius: 4px; font: 14px/1.5 var(--f-text); color: var(--ink); }
+.send { display: flex; flex-wrap: wrap; gap: 10px; }
+.send .btn-line { color: var(--ink); border-color: var(--ink); }
+.send .btn-ghost { background: transparent; border-color: transparent; color: var(--ink); text-decoration: underline; text-underline-offset: 3px; padding: 0 4px; }
+.privacy { font-size: 13px; color: var(--muted); }
+
+/* Pied de page */
+.foot { background: var(--foot); color: var(--on-foot); padding-block: 48px; --focus: var(--orange); }
+.foot .wrap { display: grid; gap: 22px; }
+.foot-top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 18px 40px; padding-bottom: 22px; border-bottom: 1px solid var(--foot-rule); }
+.foot .brand { color: var(--on-foot); }
+.foot .mk::after { background: var(--on-foot); }
+.by { display: block; margin-top: 6px; font-size: 14px; color: var(--foot-muted); }
+.foot-contact { display: grid; gap: 4px; font-size: 15px; }
+.foot-contact a { text-decoration: none; }
+.foot-contact a:hover { text-decoration: underline; }
+.foot details { font-size: 14px; color: var(--foot-muted); max-width: 80ch; }
+.foot summary { cursor: pointer; color: var(--on-foot); font-weight: 600; width: fit-content; }
+.foot details p { margin-top: 8px; }
+.copy { font-size: 13px; color: var(--foot-muted); }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#haut" aria-label="Signature Studio, retour en haut de page"><span class="mk" aria-hidden="true"></span>Signature Studio</a>
+    <nav class="nav" aria-label="Rubriques">
+      <a href="#production">Ce que nous concevons</a>
+      <a href="#methode">Méthode</a>
+      <a href="#offres">Formules</a>
+      <a href="#questions">Questions</a>
+    </nav>
+    <a class="btn btn-main btn-sm" href="#test">Tester pour 290 €</a>
+  </div>
+</header>
+
+<main id="haut">
+  <section class="hero" aria-labelledby="t-hero">
+    <div class="wrap">
+      <div class="hero-txt">
+        <h1 id="t-hero">Votre équipe créative premium, sans recrutement.</h1>
+        <p class="lead">Présentations, rapports et documents institutionnels conçus par une équipe francophone, sur abonnement mensuel. Vous déposez vos demandes ; un chef de projet les suit jusqu’à la livraison.</p>
+        <div class="ctas">
+          <a class="btn btn-main" href="#test">Tester avec une présentation</a>
+          <a class="btn btn-line" href="#offres">Voir les formules</a>
+        </div>
+        <p class="hero-note">Pour les agences, cabinets, ONG et entreprises de France, de Belgique, de Suisse, du Luxembourg et du Canada. Notre équipe travaille depuis Ouagadougou, au sein de l’agence Dream Signature.</p>
+      </div>
+
+      <figure class="show" aria-label="Exemple de diapositive avant et après notre travail">
+        <div class="show-bar">
+          <div class="tabs" role="group" aria-label="Choisir un exemple">
+            <button class="tab" type="button" data-ex-btn="ong" aria-pressed="true">Rapport d’ONG</button>
+            <button class="tab" type="button" data-ex-btn="conseil" aria-pressed="false">Proposition technique</button>
+          </div>
+          <span class="hint" aria-hidden="true">Glissez pour comparer</span>
+        </div>
+        <div class="crop slug">
+          <span class="cm tl"></span><span class="cm tr"></span><span class="cm bl"></span><span class="cm br"></span>
+          <span class="slug-l" aria-hidden="true">Avant</span><span class="slug-r" aria-hidden="true">Après</span>
+          <div class="cmp" id="cmp">
+            <div data-ex="ong">
+              <div class="slide before s-office">
+                <p class="o-title">Résultats du projet en 2025</p>
+                <ul class="o-list">
+                  <li>42 forages ont été réalisés dans les 3 régions d’intervention du projet</li>
+                  <li>18 500 personnes ont maintenant accès à une source d’eau potable située à moins de 500 m de leur domicile</li>
+                  <li>Le taux de fonctionnalité des ouvrages atteint 94 % (l’objectif fixé était de 90 %)</li>
+                  <li>120 comités de gestion de l’eau ont été formés, avec 46 % de femmes parmi les membres</li>
+                  <li>Les comités collectent une redevance mensuelle pour l’entretien des pompes</li>
+                  <li>Prochaine étape : extension du projet à 2 nouvelles régions en 2026, sous réserve de financement</li>
+                </ul>
+                <p class="o-foot"><span>Rapport annuel 2025</span><span>7</span></p>
+              </div>
+              <div class="slide after s-ngo" aria-hidden="true">
+                <div class="n-left">
+                  <p class="k-top">Rapport annuel 2025</p>
+                  <p class="n-big">18 500</p>
+                  <p class="n-bigl">personnes ont désormais accès à l’eau potable</p>
+                  <p class="k-foot"><span>Programme fictif</span></p>
+                </div>
+                <div class="n-right">
+                  <p class="k-top">Accès à l’eau</p>
+                  <p class="n-head">Une eau sûre à moins de 500 m de chez soi</p>
+                  <ul class="n-figs">
+                    <li><b>42</b><span>forages réalisés dans 3 régions</span></li>
+                    <li><b>94 %</b><span>d’ouvrages fonctionnels, pour un objectif de 90 %</span><span class="gauge"><i></i><em></em></span></li>
+                    <li><b>120</b><span>comités de gestion formés, dont 46 % de femmes</span></li>
+                  </ul>
+                  <p class="k-foot"><span>Résultats 2025</span><span>7</span></p>
+                </div>
+              </div>
+            </div>
+            <div data-ex="conseil" hidden>
+              <div class="slide before s-office">
+                <p class="o-title">Méthodologie proposée</p>
+                <ul class="o-list">
+                  <li>Phase 1 : cadrage de la mission (semaines 1 et 2)</li>
+                  <li class="sub">Réunion de démarrage avec le commanditaire, revue documentaire, rapport de démarrage</li>
+                  <li>Phase 2 : collecte des données (semaines 3 à 8)</li>
+                  <li class="sub">Enquête auprès de 600 ménages dans 4 communes et 30 entretiens individuels</li>
+                  <li>Phase 3 : analyse (semaines 9 à 11)</li>
+                  <li class="sub">Traitement statistique, triangulation des sources, rapport provisoire</li>
+                  <li>Phase 4 : restitution (semaine 12)</li>
+                  <li class="sub">Atelier de validation avec les parties prenantes, remise du rapport final</li>
+                </ul>
+                <p class="o-foot"><span>Proposition technique</span><span>12</span></p>
+              </div>
+              <div class="slide after s-cons" aria-hidden="true">
+                <div class="c-left">
+                  <p class="k-top">Proposition technique</p>
+                  <p class="c-head">Une évaluation en 12 semaines, trois livrables</p>
+                  <ul class="c-miles">
+                    <li><b>S2</b><span>Rapport de démarrage</span></li>
+                    <li><b>S11</b><span>Rapport provisoire</span></li>
+                    <li><b>S12</b><span>Rapport final</span></li>
+                  </ul>
+                  <p class="k-foot"><span>Proposition fictive</span></p>
+                </div>
+                <div class="c-right">
+                  <p class="k-top">Méthodologie</p>
+                  <div class="gantt">
+                    <span></span>
+                    <span class="g-wk">S1</span><span class="g-wk">S2</span><span class="g-wk">S3</span><span class="g-wk">S4</span><span class="g-wk">S5</span><span class="g-wk">S6</span><span class="g-wk">S7</span><span class="g-wk">S8</span><span class="g-wk">S9</span><span class="g-wk">S10</span><span class="g-wk">S11</span><span class="g-wk">S12</span>
+                    <span class="g-lab">Cadrage</span><span class="g-bar g-1" style="grid-column: 2 / span 2"></span>
+                    <span class="g-lab">Collecte</span><span class="g-bar g-2" style="grid-column: 4 / span 6">600 ménages</span>
+                    <span class="g-lab">Analyse</span><span class="g-bar g-3" style="grid-column: 10 / span 3"></span>
+                    <span class="g-lab">Restitution</span><span class="g-bar g-4" style="grid-column: 13 / span 1"></span>
+                  </div>
+                  <p class="k-foot"><span>4 communes, 30 entretiens</span><span>12</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="divider" aria-hidden="true"><span class="knob"></span></div>
+            <input class="sr cmp-range" id="cmp-range" type="range" min="0" max="100" step="1" value="50" aria-label="Position du curseur entre la version avant, à gauche, et la version après, à droite">
+          </div>
+        </div>
+        <figcaption class="cap">Diapositive 16:9, 33,87 × 19,05 cm. Exemples fictifs, réalisés pour illustrer notre travail.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="sec" id="production" aria-labelledby="t-prod">
+    <div class="wrap stack">
+      <div class="head">
+        <h2 class="h2" id="t-prod">Ce que nous concevons</h2>
+        <p class="lead">Les documents qui engagent votre organisation : ceux que vous présentez à un conseil, à un bailleur ou à un client.</p>
+      </div>
+      <div class="trio">
+        <article>
+          <div class="fmt" aria-hidden="true"><i class="f169"></i></div>
+          <h3>Présentations</h3>
+          <p>Pitch decks, présentations commerciales et institutionnelles, propositions techniques, dossiers de financement, conférences, présentations de projets.</p>
+          <p class="spec">PowerPoint 16:9 (33,87 × 19,05 cm) et PDF</p>
+        </article>
+        <article>
+          <div class="fmt" aria-hidden="true"><i class="fa4"></i></div>
+          <h3>Rapports et documents institutionnels</h3>
+          <p>Rapports annuels et d’activité, brochures, études, guides, manuels, fiches techniques, documents de capitalisation, infographies, documents destinés aux bailleurs.</p>
+          <p class="spec">A4 (21 × 29,7 cm), fond perdu de 3 mm, PDF imprimeur et PDF web</p>
+        </article>
+        <article>
+          <div class="fmt" aria-hidden="true"><i class="fwl"></i></div>
+          <h3>Production en marque blanche</h3>
+          <p>Pour les agences qui veulent absorber leurs pics de charge sans recruter. Vous gardez la relation client ; nous produisons en arrière-plan, dans vos gabarits et selon vos chartes.</p>
+          <p class="spec">Vos formats, sans aucune mention de Signature Studio</p>
+        </article>
+      </div>
+      <p class="note">En complément : visuels pour les réseaux sociaux, publicités digitales, affiches, kakémonos, flyers, petites animations et vidéos courtes.</p>
+    </div>
+  </section>
+
+  <section class="sec" id="pour-qui" aria-labelledby="t-qui">
+    <div class="wrap stack">
+      <div class="head">
+        <h2 class="h2" id="t-qui">Pour qui nous travaillons</h2>
+      </div>
+      <div class="duo">
+        <article>
+          <h3>Agences de communication et studios</h3>
+          <p>Un back-office créatif discret pour absorber vos pics de production. Vos clients ne voient que votre agence.</p>
+        </article>
+        <article>
+          <h3>Cabinets de conseil et bureaux d’études</h3>
+          <p>Rapports, propositions techniques et livrables pour les bailleurs mis en forme pendant que vos consultants se concentrent sur le fond.</p>
+        </article>
+        <article>
+          <h3>ONG, projets et organisations internationales</h3>
+          <p>Des documents qui respectent les règles de visibilité de vos bailleurs : Union européenne, AFD, Enabel, GIZ, Banque mondiale, Banque africaine de développement, Nations unies.</p>
+        </article>
+        <article>
+          <h3>PME et start-up</h3>
+          <p>Une équipe créative complète, sans créer de département interne ni gérer de freelances.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec band" id="methode" aria-labelledby="t-meth">
+    <div class="wrap stack">
+      <div class="head">
+        <h2 class="h2" id="t-meth">Comment se passe une demande</h2>
+        <p class="lead">Chaque demande suit le même circuit, avec un contrôle qualité avant chaque livraison.</p>
+      </div>
+      <div class="method">
+        <ol class="steps">
+          <li><div><h3>Vous déposez votre demande</h3><p>Votre brief, vos textes, vos fichiers et les formats attendus.</p></div></li>
+          <li><div><h3>Le chef de projet la qualifie</h3><p>Il vérifie que le brief est complet et vous pose les questions utiles.</p></div></li>
+          <li><div><h3>Un designer la produit</h3><p>Le designer le plus adapté à la demande, avec votre charte graphique.</p></div></li>
+          <li><div><h3>Nous contrôlons la qualité</h3><p>Orthographe, conformité au brief, dimensions, charte et fichiers sources.</p></div></li>
+          <li><div><h3>Vous recevez la première version</h3><p>Sous 24 à 48 h ouvrées pour une demande standard.</p></div></li>
+          <li><div><h3>Nous intégrons vos retours</h3><p>Jusqu’à validation, puis nous archivons le livrable dans votre bibliothèque.</p></div></li>
+        </ol>
+        <div class="queue">
+          <h3>Ce que veut dire « demandes illimitées »</h3>
+          <p>Vous déposez autant de demandes que vous voulez. Elles attendent dans votre file et passent en production une par une avec la formule Essentiel, deux par deux avec la formule Pro. Dès qu’une demande est validée, la suivante démarre.</p>
+          <p class="q-cap">Exemple de file, formule Pro</p>
+          <ol class="q-list">
+            <li><span class="pill on">En production</span><span>Présentation au conseil d’administration, 18 diapositives</span></li>
+            <li><span class="pill on">En production</span><span>Infographie des résultats annuels</span></li>
+            <li><span class="pill wait">En file</span><span>Kakémono pour un salon, 85 × 200 cm</span></li>
+            <li><span class="pill wait">En file</span><span>Note de synthèse de 8 pages</span></li>
+            <li><span class="pill wait">En file</span><span>Visuel décliné en 4 formats pour les réseaux sociaux</span></li>
+            <li class="more"><span>Toutes vos autres demandes, sans limite de nombre</span></li>
+          </ol>
+          <p>Un document long, comme un rapport de 40 pages, est découpé en étapes et livré selon un planning fixé dès le brief.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="offres" aria-labelledby="t-offres">
+    <div class="wrap stack">
+      <div class="head">
+        <h2 class="h2" id="t-offres">Trois formules mensuelles</h2>
+        <p class="lead">Prix en euros, hors taxes, payés d’avance chaque mois. Jusqu’à 10 % de remise en paiement trimestriel et 15 % en paiement annuel.</p>
+      </div>
+      <div class="plans">
+        <article class="plan">
+          <h3>Essentiel</h3>
+          <p class="price">590 €<small>HT / mois</small></p>
+          <p class="for">Pour les PME, les consultants et les organisations aux besoins réguliers mais modérés.</p>
+          <ul class="feat">
+            <li>Une demande en production à la fois</li>
+            <li>File de demandes illimitée</li>
+            <li>Équipe créative partagée</li>
+            <li>Présentations, supports print, documents institutionnels et visuels digitaux</li>
+            <li>Fichiers sources et contrôle qualité</li>
+            <li>Première version sous 24 à 48 h ouvrées pour une demande standard</li>
+          </ul>
+          <a class="btn btn-line" href="#demande" data-choix="essentiel">Choisir Essentiel</a>
+        </article>
+        <article class="plan">
+          <h3>Pro</h3>
+          <p class="price">990 €<small>HT / mois</small></p>
+          <p class="for">Pour les cabinets, bureaux d’études, ONG et entreprises qui produisent beaucoup.</p>
+          <ul class="feat">
+            <li>Deux demandes en production à la fois, selon leur complexité</li>
+            <li>Un designer principal attitré et un chef de projet</li>
+            <li>Traitement prioritaire</li>
+            <li>Présentations complexes, rapports et documents longs</li>
+            <li>Animations simples et vidéos courtes</li>
+            <li>Bibliothèque graphique de votre marque</li>
+            <li>Fichiers sources et contrôle qualité</li>
+          </ul>
+          <a class="btn btn-line" href="#demande" data-choix="pro">Choisir Pro</a>
+        </article>
+        <article class="plan">
+          <h3>Agence, marque blanche</h3>
+          <p class="price">1 790 €<small>HT / mois</small></p>
+          <p class="for">Pour les agences et les studios qui confient une partie de leur production.</p>
+          <ul class="feat">
+            <li>Capacité renforcée, répartie sur deux designers</li>
+            <li>Un chef de projet référent</li>
+            <li>Aucune mention de Signature Studio sur les livrables</li>
+            <li>Plusieurs marques clientes</li>
+            <li>Priorité élevée</li>
+            <li>Reporting mensuel de la capacité utilisée</li>
+            <li>Travail possible dans votre Slack ou votre Microsoft Teams</li>
+          </ul>
+          <a class="btn btn-line" href="#demande" data-choix="agence">Choisir Agence</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="test" aria-labelledby="t-test">
+    <div class="wrap">
+      <div class="crop">
+        <span class="cm tl"></span><span class="cm tr"></span><span class="cm bl"></span><span class="cm br"></span>
+        <div class="test">
+          <div class="test-in">
+            <div class="test-txt">
+              <p class="kicker">Pour commencer sans engagement d’abonnement</p>
+              <h2 class="h2" id="t-test">Votre présentation relookée en 3 jours ouvrés</h2>
+              <p>Envoyez-nous une présentation existante, jusqu’à 15 diapositives. Nous vous la rendons redessinée, avec les fichiers sources. C’est le moyen le plus simple de juger notre travail sur vos propres documents.</p>
+              <p>Si vous vous abonnez dans les 15 jours qui suivent la livraison, les 290 € sont déduits de votre premier mois.</p>
+            </div>
+            <div class="test-buy">
+              <p class="price">290 €<small>HT, une fois</small></p>
+              <a class="btn btn-main" href="#demande" data-choix="test">Commander le test</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="pourquoi" aria-labelledby="t-pq">
+    <div class="wrap stack">
+      <div class="head">
+        <h2 class="h2" id="t-pq">Pourquoi Signature Studio</h2>
+      </div>
+      <div class="duo">
+        <article>
+          <h3>Francophone de bout en bout</h3>
+          <p>Briefs, échanges et relectures se font en français. Chaque livrable passe une vérification orthographique avant de vous être envoyé.</p>
+        </article>
+        <article>
+          <h3>Un chef de projet qui connaît vos documents</h3>
+          <p>Il garde votre charte, vos modèles et vos préférences. Vous n’avez pas à tout réexpliquer à chaque demande.</p>
+        </article>
+        <article>
+          <h3>Vos heures de bureau</h3>
+          <p>Nous travaillons à l’heure GMT : une à deux heures de décalage avec Paris, Bruxelles, Genève et Luxembourg. Pour le Québec, la production avance pendant votre nuit.</p>
+        </article>
+        <article>
+          <h3>Une agence établie derrière le studio</h3>
+          <p>Signature Studio fait partie de Dream Signature, agence de communication fondée en 2021 à Ouagadougou, qui conçoit des supports pour des entreprises, des institutions, des ONG et des projets de coopération internationale. Contrat d’abonnement, facture et virement en euros.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="questions" aria-labelledby="t-faq">
+    <div class="wrap stack">
+      <div class="head">
+        <h2 class="h2" id="t-faq">Questions fréquentes</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Que veut dire « file de demandes illimitée » ?</summary>
+          <p>Vous pouvez déposer autant de demandes que vous le souhaitez. Le nombre de demandes traitées en même temps dépend de votre formule : une avec Essentiel, deux avec Pro, davantage avec la formule Agence. Une demande complexe peut occuper plusieurs jours.</p>
+        </details>
+        <details>
+          <summary>En combien de temps recevez-vous une première version ?</summary>
+          <p>Sous 24 à 48 h ouvrées pour une demande standard : quelques diapositives, une page, un visuel décliné en plusieurs formats. Pour un document long, nous fixons ensemble un planning par étapes dès le brief.</p>
+        </details>
+        <details>
+          <summary>Combien de modifications puis-je demander ?</summary>
+          <p>Nous intégrons vos retours jusqu’à validation, dans le cadre prévu par votre contrat d’abonnement.</p>
+        </details>
+        <details>
+          <summary>Puis-je tester avant de m’abonner ?</summary>
+          <p>Oui. Le test à 290 € vous permet de faire relooker une présentation de 15 diapositives au plus, en 3 jours ouvrés. Le montant est déduit de votre premier mois si vous vous abonnez dans les 15 jours qui suivent la livraison.</p>
+        </details>
+        <details>
+          <summary>Comment se passe le paiement ?</summary>
+          <p>Chaque mois est payé d’avance, par virement bancaire en euros, et la production démarre à réception du paiement. Un paiement trimestriel ou annuel d’avance donne droit à une remise. Les conditions d’abonnement et de résiliation figurent dans le contrat, que nous vous envoyons avant tout paiement.</p>
+        </details>
+        <details>
+          <summary>Travaillez-vous en marque blanche ?</summary>
+          <p>Oui, c’est le principe de la formule Agence : aucune mention de Signature Studio sur les livrables, et vous gardez la relation avec vos clients. Nous pouvons gérer plusieurs de vos marques clientes et travailler dans votre Slack ou votre Microsoft Teams.</p>
+        </details>
+        <details>
+          <summary>Mes documents restent-ils confidentiels ?</summary>
+          <p>Oui. Vos fichiers ne servent qu’à vos demandes, et nous signons un accord de confidentialité sur simple demande.</p>
+        </details>
+        <details>
+          <summary>Utilisez-vous l’intelligence artificielle ?</summary>
+          <p>Oui, comme outil : recherche visuelle, détourage et retouche d’images, vérification linguistique, déclinaisons de formats. Chaque livrable est conçu et contrôlé par un designer.</p>
+        </details>
+        <details>
+          <summary>Où est basée l’équipe ?</summary>
+          <p>À Ouagadougou, au Burkina Faso, au sein de l’agence Dream Signature. Nous travaillons en ligne et à l’heure GMT, quel que soit votre pays.</p>
+        </details>
+        <details>
+          <summary>Dans quels formats livrez-vous ?</summary>
+          <p>PowerPoint et PDF pour les présentations, PDF imprimeur et PDF web pour les documents, avec les fichiers sources : Adobe InDesign, Illustrator ou Photoshop, Figma ou Canva selon vos outils.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec band" id="demande" aria-labelledby="t-ask">
+    <div class="wrap ask">
+      <div class="ask-side">
+        <div class="head">
+          <h2 class="h2" id="t-ask">Parlons de votre prochain document</h2>
+          <p class="lead">Dites-nous ce dont vous avez besoin. Votre message s’ouvre dans WhatsApp ou dans votre messagerie, prêt à envoyer.</p>
+        </div>
+        <dl class="direct">
+          <div>
+            <dt>WhatsApp</dt>
+            <dd><a href="https://wa.me/22657469947" target="_blank" rel="noopener"><span class="sel">+226 57 46 99 47</span></a></dd>
+          </div>
+          <div>
+            <dt>E-mail</dt>
+            <dd><span class="sel" id="mail-txt">contact@dream-signature.com</span><button class="mini" type="button" id="mail-copy">Copier</button></dd>
+          </div>
+        </dl>
+        <p class="lead" style="font-size: 15px">Pour le test, joignez simplement votre présentation à votre message.</p>
+      </div>
+
+      <form class="form" id="dform" novalidate>
+        <fieldset>
+          <legend>Votre demande concerne</legend>
+          <div class="chips">
+            <input type="radio" name="choix" id="c-test" value="test" checked><label for="c-test">Le test à 290 €</label>
+            <input type="radio" name="choix" id="c-essentiel" value="essentiel"><label for="c-essentiel">Essentiel</label>
+            <input type="radio" name="choix" id="c-pro" value="pro"><label for="c-pro">Pro</label>
+            <input type="radio" name="choix" id="c-agence" value="agence"><label for="c-agence">Agence</label>
+            <input type="radio" name="choix" id="c-conseil" value="conseil"><label for="c-conseil">Je ne sais pas encore</label>
+          </div>
+        </fieldset>
+        <div class="row2">
+          <div class="field">
+            <label for="d-nom">Nom et prénom</label>
+            <input type="text" id="d-nom" name="nom" autocomplete="name" aria-describedby="e-nom">
+            <p class="err" id="e-nom" hidden>Indiquez votre nom.</p>
+          </div>
+          <div class="field">
+            <label for="d-org">Organisation</label>
+            <input type="text" id="d-org" name="organisation" autocomplete="organization" aria-describedby="e-org">
+            <p class="err" id="e-org" hidden>Indiquez le nom de votre organisation.</p>
+          </div>
+        </div>
+        <div class="row2">
+          <div class="field">
+            <label for="d-email">E-mail professionnel</label>
+            <input type="email" id="d-email" name="email" autocomplete="email" inputmode="email" aria-describedby="e-email">
+            <p class="err" id="e-email" hidden>Indiquez une adresse e-mail valide, par exemple nom@organisation.fr.</p>
+          </div>
+          <div class="field">
+            <label for="d-pays">Pays</label>
+            <select id="d-pays" name="pays">
+              <option value="">Choisir</option>
+              <option>France</option>
+              <option>Belgique</option>
+              <option>Suisse</option>
+              <option>Luxembourg</option>
+              <option>Canada</option>
+              <option>Autre pays</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="d-msg">Votre besoin</label>
+          <textarea id="d-msg" name="besoin" rows="4" placeholder="Par exemple : mettre en page notre rapport annuel de 40 pages d’ici fin novembre."></textarea>
+        </div>
+        <div class="preview">
+          <label for="d-preview">Votre message</label>
+          <pre id="d-preview" tabindex="0"></pre>
+        </div>
+        <div class="send">
+          <a class="btn btn-main" id="d-wa" href="https://wa.me/22657469947" target="_blank" rel="noopener">Envoyer par WhatsApp</a>
+          <a class="btn btn-line" id="d-mail" href="mailto:contact@dream-signature.com">Envoyer par e-mail</a>
+          <button class="btn btn-ghost" type="button" id="d-copy">Copier le message</button>
+        </div>
+        <p class="privacy">Ce site ne conserve aucune donnée : c’est vous qui envoyez le message, depuis WhatsApp ou votre messagerie.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <a class="brand" href="#haut"><span class="mk" aria-hidden="true"></span>Signature Studio</a>
+        <span class="by">un studio de Dream Signature</span>
+      </div>
+      <div class="foot-contact">
+        <span>WhatsApp : <a href="https://wa.me/22657469947" target="_blank" rel="noopener">+226 57 46 99 47</a></span>
+        <span>E-mail : <a href="mailto:contact@dream-signature.com">contact@dream-signature.com</a></span>
+      </div>
+    </div>
+    <details>
+      <summary>Mentions légales</summary>
+      <p>Éditeur : Dream Signature Burkina, agence de marketing et de communication, Ouagadougou, Burkina Faso. Contact : WhatsApp +226 57 46 99 47, contact@dream-signature.com.</p>
+      <p>Hébergement : Netlify, Inc., États-Unis.</p>
+      <p>Propriété intellectuelle : les textes, les exemples, le design et les visuels de ce site sont protégés par le droit d’auteur. Toute reproduction, même partielle, sans autorisation écrite de Dream Signature est interdite.</p>
+      <p>Exemples : les diapositives présentées sur ce site sont des exemples fictifs, réalisés pour illustrer notre travail.</p>
+      <p>Données personnelles : ce site ne conserve aucune donnée. Le formulaire prépare un message que vous envoyez vous-même par WhatsApp ou par e-mail ; vos informations ne servent qu’à répondre à votre demande et ne sont jamais transmises à des tiers.</p>
+    </details>
+    <p class="copy">© 2026 Dream Signature. Signature Studio est une marque de Dream Signature. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  function $(id) { return document.getElementById(id); }
+
+  /* Comparateur avant / après */
+  var cmp = $("cmp"), range = $("cmp-range"), drag = false;
+  function setPos(p) {
+    p = Math.max(0, Math.min(100, p));
+    cmp.style.setProperty("--pos", p + "%");
+    range.value = String(Math.round(p));
+    range.setAttribute("aria-valuetext", Math.round(p) + " % de la largeur");
+  }
+  function fromPointer(e) {
+    var r = cmp.getBoundingClientRect();
+    if (r.width > 0) setPos((e.clientX - r.left) / r.width * 100);
+  }
+  cmp.addEventListener("pointerdown", function (e) {
+    if (e.button !== 0) return;
+    drag = true;
+    try { cmp.setPointerCapture(e.pointerId); } catch (x) {}
+    fromPointer(e);
+  });
+  cmp.addEventListener("pointermove", function (e) { if (drag) fromPointer(e); });
+  ["pointerup", "pointercancel", "lostpointercapture"].forEach(function (t) {
+    cmp.addEventListener(t, function () { drag = false; });
+  });
+  range.addEventListener("input", function () { setPos(Number(range.value)); });
+
+  document.querySelectorAll("[data-ex-btn]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var ex = b.getAttribute("data-ex-btn");
+      document.querySelectorAll("[data-ex]").forEach(function (g) { g.hidden = g.getAttribute("data-ex") !== ex; });
+      document.querySelectorAll("[data-ex-btn]").forEach(function (x) { x.setAttribute("aria-pressed", String(x === b)); });
+      setPos(50);
+    });
+  });
+
+  /* Formulaire de demande */
+  var form = $("dform");
+  var F = { nom: $("d-nom"), org: $("d-org"), email: $("d-email"), pays: $("d-pays"), msg: $("d-msg") };
+  var LIB = {
+    test: "le test à 290 € (une présentation relookée en 3 jours ouvrés)",
+    essentiel: "la formule Essentiel (590 € HT par mois)",
+    pro: "la formule Pro (990 € HT par mois)",
+    agence: "la formule Agence, en marque blanche (1 790 € HT par mois)",
+    conseil: "un conseil pour choisir la bonne formule"
+  };
+  var COURT = { test: "test à 290 €", essentiel: "formule Essentiel", pro: "formule Pro", agence: "formule Agence", conseil: "demande d’information" };
+  function choix() { var r = form.querySelector('input[name="choix"]:checked'); return r ? r.value : "conseil"; }
+  function val(el) { return el.value.trim(); }
+  function texte() {
+    var nom = val(F.nom), org = val(F.org), pays = F.pays.value, msg = val(F.msg), mail = val(F.email);
+    var l = ["Bonjour Signature Studio,", ""];
+    var qui = "Je m’appelle " + (nom || "…");
+    if (org) qui += ", de " + org;
+    if (pays) qui += " (" + pays + ")";
+    l.push(qui + (nom || org || pays ? "." : ""));
+    l.push("Ma demande concerne " + LIB[choix()] + ".");
+    if (msg) { l.push(""); l.push("Mon besoin : " + msg); }
+    if (mail) { l.push(""); l.push("Mon e-mail : " + mail); }
+    return l.join("\n");
+  }
+  function sujet() { return "Signature Studio : " + COURT[choix()] + (val(F.org) ? ", " + val(F.org) : ""); }
+  function maj() {
+    var t = texte();
+    $("d-preview").textContent = t;
+    $("d-wa").href = "https://wa.me/22657469947?text=" + encodeURIComponent(t);
+    $("d-mail").href = "mailto:contact@dream-signature.com?subject=" + encodeURIComponent(sujet()) + "&body=" + encodeURIComponent(t);
+  }
+  function erreur(el, id, ko) {
+    $(id).hidden = !ko;
+    if (ko) el.setAttribute("aria-invalid", "true"); else el.removeAttribute("aria-invalid");
+    return !ko;
+  }
+  function valide() {
+    var ok1 = erreur(F.nom, "e-nom", !val(F.nom));
+    var ok2 = erreur(F.org, "e-org", !val(F.org));
+    var ok3 = erreur(F.email, "e-email", !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val(F.email)));
+    if (!ok1) F.nom.focus(); else if (!ok2) F.org.focus(); else if (!ok3) F.email.focus();
+    return ok1 && ok2 && ok3;
+  }
+  form.addEventListener("input", function (e) {
+    maj();
+    if (e.target.getAttribute("aria-invalid") === "true") {
+      if (e.target === F.nom) erreur(F.nom, "e-nom", !val(F.nom));
+      if (e.target === F.org) erreur(F.org, "e-org", !val(F.org));
+      if (e.target === F.email) erreur(F.email, "e-email", !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val(F.email)));
+    }
+  });
+  form.addEventListener("change", maj);
+  [$("d-wa"), $("d-mail")].forEach(function (a) {
+    a.addEventListener("click", function (e) { maj(); if (!valide()) e.preventDefault(); });
+  });
+  form.addEventListener("submit", function (e) { e.preventDefault(); if (valide()) $("d-wa").click(); });
+
+  function copier(txt, btn, cible, libelle) {
+    function fait() { btn.textContent = "Copié"; setTimeout(function () { btn.textContent = libelle; }, 1600); }
+    function repli() {
+      try { var r = document.createRange(); r.selectNodeContents(cible); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); } catch (x) {}
+      btn.textContent = "Texte sélectionné";
+      setTimeout(function () { btn.textContent = libelle; }, 1800);
+    }
+    try { navigator.clipboard.writeText(txt).then(fait, repli); } catch (x) { repli(); }
+  }
+  $("d-copy").addEventListener("click", function () { maj(); copier(texte(), this, $("d-preview"), "Copier le message"); });
+  $("mail-copy").addEventListener("click", function () { copier("contact@dream-signature.com", this, $("mail-txt"), "Copier"); });
+
+  /* Les boutons « Choisir » et « Commander le test » présélectionnent la demande */
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest ? e.target.closest("[data-choix]") : null;
+    if (!a) return;
+    var r = $("c-" + a.getAttribute("data-choix"));
+    if (r) { r.checked = true; maj(); }
+  });
+
+  maj();
+})();
+</script>
+</body>
+</html>

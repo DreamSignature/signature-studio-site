@@ -1,0 +1,3 @@
+# Netlify publie le dossier site/ tel quel : pas de commande de construction.
+[build]
+  publish = "site"
