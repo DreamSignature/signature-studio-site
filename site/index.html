@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Signature Studio, studio créatif francophone sur abonnement</title>
-<meta name="description" content="Présentations, rapports et documents institutionnels conçus par une équipe francophone, sur abonnement mensuel. Pour les agences, cabinets, ONG et entreprises. Test : une présentation relookée en 3 jours ouvrés, 290 €.">
+<meta name="description" content="Présentations, rapports et documents institutionnels en français ou en anglais, conçus par une équipe francophone, sur abonnement mensuel. Pour les agences, cabinets, ONG et entreprises. Test : une présentation relookée en 3 jours ouvrés, 290 €.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Signature Studio">
 <meta property="og:title" content="Signature Studio : votre équipe créative premium, sans recrutement">
-<meta property="og:description" content="Présentations, rapports et documents institutionnels conçus par une équipe francophone, sur abonnement mensuel. Pour les agences, cabinets, ONG et entreprises. Test : une présentation relookée en 3 jours ouvrés, 290 €.">
+<meta property="og:description" content="Présentations, rapports et documents institutionnels en français ou en anglais, conçus par une équipe francophone, sur abonnement mensuel. Pour les agences, cabinets, ONG et entreprises. Test : une présentation relookée en 3 jours ouvrés, 290 €.">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:url" content="https://studiodreams.netlify.app/">
 <meta property="og:image" content="https://studiodreams.netlify.app/apercu.png">
@@ -19,7 +19,7 @@
 <link rel="canonical" href="https://studiodreams.netlify.app/">
 <meta name="theme-color" content="#0f3d3b">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230F3D3B'/%3E%3Cpath d='M15 33V15h18' fill='none' stroke='%23E8891C' stroke-width='5'/%3E%3Crect x='37' y='37' width='12' height='12' fill='%23F3EDE1'/%3E%3C/svg%3E">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "Signature Studio", "url": "https://studiodreams.netlify.app/", "description": "Présentations, rapports et documents institutionnels conçus par une équipe francophone, sur abonnement mensuel. Pour les agences, cabinets, ONG et entreprises. Test : une présentation relookée en 3 jours ouvrés, 290 €.", "email": "contact@dream-signature.com", "telephone": "+226 57 46 99 47", "areaServed": ["FR", "BE", "CH", "LU", "CA"], "address": {"@type": "PostalAddress", "addressLocality": "Ouagadougou", "addressCountry": "BF"}, "parentOrganization": {"@type": "Organization", "name": "Dream Signature"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "Signature Studio", "url": "https://studiodreams.netlify.app/", "description": "Présentations, rapports et documents institutionnels en français ou en anglais, conçus par une équipe francophone, sur abonnement mensuel. Pour les agences, cabinets, ONG et entreprises. Test : une présentation relookée en 3 jours ouvrés, 290 €.", "email": "contact@dream-signature.com", "telephone": "+226 57 46 99 47", "areaServed": ["FR", "BE", "CH", "LU", "CA"], "knowsLanguage": ["fr", "en"], "logo": "https://studiodreams.netlify.app/img/dream-signature.webp", "address": {"@type": "PostalAddress", "addressLocality": "Ouagadougou", "addressCountry": "BF"}, "parentOrganization": {"@type": "Organization", "name": "Dream Signature"}}</script>
 <style>
 :root { color-scheme: light; padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
 body { margin: 0; }
@@ -81,6 +81,15 @@ img { max-width: 100%; }
   --cons-b4: #1c2740;
   --cons-gold: #c8961e;
   --cons-on: #ffffff;
+  --pitch-bg: #173d30;
+  --pitch-fg: #f3efe4;
+  --pitch-accent: #8fd3b4;
+  --pitch-muted: #a9c7b8;
+  --pitch-rule: #2c5646;
+
+  /* Logo Dream Signature : version d'origine sur fond clair, version crème sur fond sombre */
+  --logo-l: block;
+  --logo-d: none;
 
   --f-display: "Spectral", Georgia, "Times New Roman", serif;
   --f-text: "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -94,6 +103,7 @@ img { max-width: 100%; }
     --band: #0f3b39; --band-2: #0b2e2c; --band-3: #134542; --on-band: #ede7da; --band-muted: #a2bcb7; --band-rule: #2a5653;
     --foot: #061110; --on-foot: #e6e0d3; --foot-muted: #93aaa5; --foot-rule: #1a302e; --err: #ff8a7d;
     --shadow: 0 1px 0 rgba(0, 0, 0, .4), 0 24px 48px -28px rgba(0, 0, 0, .85);
+    --logo-l: none; --logo-d: block;
     color-scheme: dark;
   }
 }
@@ -104,6 +114,7 @@ img { max-width: 100%; }
   --band: #0f3b39; --band-2: #0b2e2c; --band-3: #134542; --on-band: #ede7da; --band-muted: #a2bcb7; --band-rule: #2a5653;
   --foot: #061110; --on-foot: #e6e0d3; --foot-muted: #93aaa5; --foot-rule: #1a302e; --err: #ff8a7d;
   --shadow: 0 1px 0 rgba(0, 0, 0, .4), 0 24px 48px -28px rgba(0, 0, 0, .85);
+  --logo-l: none; --logo-d: block;
   color-scheme: dark;
 }
 
@@ -215,30 +226,31 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .o-foot { margin-top: auto; display: flex; justify-content: space-between; font-size: 1.45cqw; color: var(--office-muted); }
 
 /* Diapositives « après » : deux colonnes, la colonne de droite se lit seule quand le curseur est au milieu */
-.s-ngo, .s-cons { display: grid; grid-template-columns: 44% 56%; font-family: var(--f-text); }
-.s-ngo > div, .s-cons > div { display: grid; min-width: 0; padding: 4.4cqw 4cqw 3.4cqw 5.4cqw; }
-.s-ngo > div + div, .s-cons > div + div { padding: 4.4cqw 5.4cqw 3.4cqw 7cqw; }
+.s-two { display: grid; grid-template-columns: 44% 56%; font-family: var(--f-text); background: var(--s-bg); color: var(--s-fg); }
+.s-two > div { display: grid; min-width: 0; padding: 4.4cqw 4cqw 3.4cqw 5.4cqw; }
+.s-two > div + div { padding: 4.4cqw 5.4cqw 3.4cqw 7cqw; }
 .k-top { font-size: 1.45cqw; letter-spacing: .1em; text-transform: uppercase; }
 .k-foot { display: flex; justify-content: space-between; gap: 2cqw; font-size: 1.3cqw; }
 
-/* Rapport d'ONG */
-.s-ngo { background: var(--ngo-bg); color: var(--ngo-fg); }
-.n-left { grid-template-rows: auto 1fr auto auto; gap: 1.4cqw; background: var(--ngo-accent); color: var(--ngo-bg); }
+/* Rapport d'ONG et pitch deck : même gabarit, palettes différentes */
+.s-ngo { --s-bg: var(--ngo-bg); --s-fg: var(--ngo-fg); --s-accent: var(--ngo-accent); --s-muted: var(--ngo-muted); --s-rule: var(--ngo-rule); }
+.s-pitch { --s-bg: var(--pitch-bg); --s-fg: var(--pitch-fg); --s-accent: var(--pitch-accent); --s-muted: var(--pitch-muted); --s-rule: var(--pitch-rule); --fig-w: 13.5cqw; }
+.n-left { grid-template-rows: auto 1fr auto auto; gap: 1.4cqw; background: var(--s-accent); color: var(--s-bg); }
 .n-big { align-self: end; font-family: var(--f-display); font-weight: 300; font-size: 10.5cqw; line-height: .95; letter-spacing: -0.03em; font-variant-numeric: lining-nums; }
 .n-bigl { max-width: 16ch; font-size: 2.1cqw; line-height: 1.25; font-weight: 600; }
 .n-right { grid-template-rows: auto auto 1fr auto; gap: 2cqw; }
-.n-right .k-top, .n-right .k-foot { color: var(--ngo-muted); }
+.n-right .k-top, .n-right .k-foot { color: var(--s-muted); }
 .n-head { font-family: var(--f-display); font-weight: 300; font-size: 3.6cqw; line-height: 1.1; letter-spacing: -0.01em; }
 .n-figs { display: grid; align-content: center; }
-.n-figs li { display: grid; grid-template-columns: 11cqw minmax(0, 1fr); gap: 1.4cqw; align-items: center; padding-block: 1.25cqw; border-top: 1px solid var(--ngo-rule); }
+.n-figs li { display: grid; grid-template-columns: var(--fig-w, 11cqw) minmax(0, 1fr); gap: 1.4cqw; align-items: center; padding-block: 1.25cqw; border-top: 1px solid var(--s-rule); }
 .n-figs b { font-weight: 700; font-size: 4cqw; line-height: 1; font-variant-numeric: tabular-nums; letter-spacing: -0.02em; white-space: nowrap; }
-.n-figs span { font-size: 1.6cqw; line-height: 1.3; color: var(--ngo-muted); }
-.gauge { position: relative; display: block; grid-column: 2; height: .7cqw; margin-top: -0.4cqw; border-radius: 1cqw; background: var(--ngo-rule); }
-.gauge i { position: absolute; inset: 0 auto 0 0; width: 94%; border-radius: inherit; background: var(--ngo-accent); }
-.gauge em { position: absolute; top: -0.5cqw; bottom: -0.5cqw; left: 90%; width: 2px; background: var(--ngo-fg); }
+.n-figs span { font-size: 1.6cqw; line-height: 1.3; color: var(--s-muted); }
+.gauge { position: relative; display: block; grid-column: 2; height: .7cqw; margin-top: -0.4cqw; border-radius: 1cqw; background: var(--s-rule); }
+.gauge i { position: absolute; inset: 0 auto 0 0; width: 94%; border-radius: inherit; background: var(--s-accent); }
+.gauge em { position: absolute; top: -0.5cqw; bottom: -0.5cqw; left: 90%; width: 2px; background: var(--s-fg); }
 
 /* Proposition technique */
-.s-cons { background: var(--cons-bg); color: var(--cons-ink); }
+.s-cons { --s-bg: var(--cons-bg); --s-fg: var(--cons-ink); }
 .c-left { grid-template-rows: auto auto 1fr auto; gap: 2.4cqw; background: var(--cons-b4); color: var(--cons-on); }
 .c-left .k-top, .c-left .k-foot { color: var(--cons-b1); }
 .c-head { font-family: var(--f-display); font-weight: 300; font-size: 3.9cqw; line-height: 1.1; letter-spacing: -0.01em; }
@@ -275,6 +287,21 @@ button, input, select, textarea { font: inherit; color: inherit; }
 @media (min-width: 760px) { .duo { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .duo article { display: grid; gap: 8px; align-content: start; padding-top: 18px; border-top: 1px solid var(--rule); min-width: 0; }
 .duo p { color: var(--muted); }
+
+/* Langues de travail */
+.langs { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px; font-size: 16px; padding: 16px 0; border-block: 1px solid var(--rule); }
+.langs p { flex: 1 1 280px; min-width: 0; }
+.lg { display: inline-block; padding: 2px 7px; border: 1.5px solid var(--ink); border-radius: 3px; font-size: 12px; font-weight: 700; letter-spacing: .08em; line-height: 1.4; }
+
+/* Dream Signature */
+.logo-l { display: var(--logo-l); }
+.logo-d { display: var(--logo-d); }
+.ds { display: grid; gap: 24px 48px; grid-template-columns: minmax(0, 1fr); align-items: center; padding: clamp(22px, 3vw, 36px); background: var(--sheet); border: 1px solid var(--rule); border-radius: 6px; }
+@media (min-width: 820px) { .ds { grid-template-columns: minmax(0, 340px) minmax(0, 1fr); } }
+.ds img { width: 100%; max-width: 340px; height: auto; }
+.ds-txt { display: grid; gap: 10px; min-width: 0; }
+.ds-txt h3 { font-family: var(--f-display); font-weight: 400; font-size: 28px; line-height: 1.15; }
+.ds-txt p { color: var(--muted); max-width: 62ch; }
 
 /* Méthode */
 .method { display: grid; gap: clamp(36px, 5vw, 64px); grid-template-columns: minmax(0, 1fr); align-items: start; }
@@ -373,6 +400,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .foot .brand { color: var(--on-foot); }
 .foot .mk::after { background: var(--on-foot); }
 .by { display: block; margin-top: 6px; font-size: 14px; color: var(--foot-muted); }
+.foot-logo { display: block; width: 210px; max-width: 100%; height: auto; margin-top: 10px; }
 .foot-contact { display: grid; gap: 4px; font-size: 15px; }
 .foot-contact a { text-decoration: none; }
 .foot-contact a:hover { text-decoration: underline; }
@@ -401,7 +429,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
     <div class="wrap">
       <div class="hero-txt">
         <h1 id="t-hero">Votre équipe créative premium, sans recrutement.</h1>
-        <p class="lead">Présentations, rapports et documents institutionnels conçus par une équipe francophone, sur abonnement mensuel. Vous déposez vos demandes ; un chef de projet les suit jusqu’à la livraison.</p>
+        <p class="lead">Présentations, rapports et documents institutionnels en français ou en anglais, conçus par une équipe francophone, sur abonnement mensuel. Vous déposez vos demandes ; un chef de projet les suit jusqu’à la livraison.</p>
         <div class="ctas">
           <a class="btn btn-main" href="#test">Tester avec une présentation</a>
           <a class="btn btn-line" href="#offres">Voir les formules</a>
@@ -414,6 +442,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
           <div class="tabs" role="group" aria-label="Choisir un exemple">
             <button class="tab" type="button" data-ex-btn="ong" aria-pressed="true">Rapport d’ONG</button>
             <button class="tab" type="button" data-ex-btn="conseil" aria-pressed="false">Proposition technique</button>
+            <button class="tab" type="button" data-ex-btn="pitch" aria-pressed="false">Pitch deck en anglais</button>
           </div>
           <span class="hint" aria-hidden="true">Glissez pour comparer</span>
         </div>
@@ -434,7 +463,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
                 </ul>
                 <p class="o-foot"><span>Rapport annuel 2025</span><span>7</span></p>
               </div>
-              <div class="slide after s-ngo" aria-hidden="true">
+              <div class="slide after s-two s-ngo" aria-hidden="true">
                 <div class="n-left">
                   <p class="k-top">Rapport annuel 2025</p>
                   <p class="n-big">18 500</p>
@@ -468,7 +497,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
                 </ul>
                 <p class="o-foot"><span>Proposition technique</span><span>12</span></p>
               </div>
-              <div class="slide after s-cons" aria-hidden="true">
+              <div class="slide after s-two s-cons" aria-hidden="true">
                 <div class="c-left">
                   <p class="k-top">Proposition technique</p>
                   <p class="c-head">Une évaluation en 12 semaines, trois livrables</p>
@@ -490,6 +519,37 @@ button, input, select, textarea { font: inherit; color: inherit; }
                     <span class="g-lab">Restitution</span><span class="g-bar g-4" style="grid-column: 13 / span 1"></span>
                   </div>
                   <p class="k-foot"><span>4 communes, 30 entretiens</span><span>12</span></p>
+                </div>
+              </div>
+            </div>
+            <div data-ex="pitch" lang="en" hidden>
+              <div class="slide before s-office">
+                <p class="o-title">Pilot results</p>
+                <ul class="o-list">
+                  <li>We installed 38 solar cold rooms with farmer cooperatives in 2025</li>
+                  <li>1,450 tonnes of fruit and vegetables were stored during the pilot</li>
+                  <li>Post-harvest losses fell from 40% to 9% on average across the cooperatives</li>
+                  <li>Cooperatives pay a monthly fee, with an average payback period of 18 months</li>
+                  <li>Next step: 250 cold rooms in 3 countries by 2028, subject to funding</li>
+                </ul>
+                <p class="o-foot"><span>Investor presentation</span><span>4</span></p>
+              </div>
+              <div class="slide after s-two s-pitch" aria-hidden="true">
+                <div class="n-left">
+                  <p class="k-top">Investor presentation</p>
+                  <p class="n-big">9%</p>
+                  <p class="n-bigl">post-harvest losses, down from 40%</p>
+                  <p class="k-foot"><span>Fictional company</span></p>
+                </div>
+                <div class="n-right">
+                  <p class="k-top">Pilot results 2025</p>
+                  <p class="n-head">Fresh produce that reaches the market</p>
+                  <ul class="n-figs">
+                    <li><b>38</b><span>solar cold rooms installed with farmer cooperatives</span></li>
+                    <li><b>1,450</b><span>tonnes of fruit and vegetables stored</span></li>
+                    <li><b>18</b><span>months average payback for a cooperative</span></li>
+                  </ul>
+                  <p class="k-foot"><span>Next: 250 cold rooms by 2028</span><span>4</span></p>
                 </div>
               </div>
             </div>
@@ -527,6 +587,10 @@ button, input, select, textarea { font: inherit; color: inherit; }
           <p>Pour les agences qui veulent absorber leurs pics de charge sans recruter. Vous gardez la relation client ; nous produisons en arrière-plan, dans vos gabarits et selon vos chartes.</p>
           <p class="spec">Vos formats, sans aucune mention de Signature Studio</p>
         </article>
+      </div>
+      <div class="langs">
+        <span class="lg" lang="fr">FR</span><span class="lg" lang="en">EN</span>
+        <p>Vos présentations et vos créations en français, en anglais ou en version bilingue, à partir de vos textes.</p>
       </div>
       <p class="note">En complément : visuels pour les réseaux sociaux, publicités digitales, affiches, kakémonos, flyers, petites animations et vidéos courtes.</p>
     </div>
@@ -607,6 +671,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
             <li>File de demandes illimitée</li>
             <li>Équipe créative partagée</li>
             <li>Présentations, supports print, documents institutionnels et visuels digitaux</li>
+            <li>Livrables en français ou en anglais</li>
             <li>Fichiers sources et contrôle qualité</li>
             <li>Première version sous 24 à 48 h ouvrées pour une demande standard</li>
           </ul>
@@ -621,6 +686,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
             <li>Un designer principal attitré et un chef de projet</li>
             <li>Traitement prioritaire</li>
             <li>Présentations complexes, rapports et documents longs</li>
+            <li>Livrables en français, en anglais ou bilingues</li>
             <li>Animations simples et vidéos courtes</li>
             <li>Bibliothèque graphique de votre marque</li>
             <li>Fichiers sources et contrôle qualité</li>
@@ -636,6 +702,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
             <li>Un chef de projet référent</li>
             <li>Aucune mention de Signature Studio sur les livrables</li>
             <li>Plusieurs marques clientes</li>
+            <li>Livrables en français, en anglais ou bilingues</li>
             <li>Priorité élevée</li>
             <li>Reporting mensuel de la capacité utilisée</li>
             <li>Travail possible dans votre Slack ou votre Microsoft Teams</li>
@@ -655,7 +722,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
             <div class="test-txt">
               <p class="kicker">Pour commencer sans engagement d’abonnement</p>
               <h2 class="h2" id="t-test">Votre présentation relookée en 3 jours ouvrés</h2>
-              <p>Envoyez-nous une présentation existante, jusqu’à 15 diapositives. Nous vous la rendons redessinée, avec les fichiers sources. C’est le moyen le plus simple de juger notre travail sur vos propres documents.</p>
+              <p>Envoyez-nous une présentation existante, en français ou en anglais, jusqu’à 15 diapositives. Nous vous la rendons redessinée, avec les fichiers sources. C’est le moyen le plus simple de juger notre travail sur vos propres documents.</p>
               <p>Si vous vous abonnez dans les 15 jours qui suivent la livraison, les 290 € sont déduits de votre premier mois.</p>
             </div>
             <div class="test-buy">
@@ -675,8 +742,8 @@ button, input, select, textarea { font: inherit; color: inherit; }
       </div>
       <div class="duo">
         <article>
-          <h3>Francophone de bout en bout</h3>
-          <p>Briefs, échanges et relectures se font en français. Chaque livrable passe une vérification orthographique avant de vous être envoyé.</p>
+          <h3>En français et en anglais</h3>
+          <p>Briefs et échanges en français. Vos livrables en français, en anglais ou bilingues, avec une vérification orthographique avant chaque envoi.</p>
         </article>
         <article>
           <h3>Un chef de projet qui connaît vos documents</h3>
@@ -687,9 +754,19 @@ button, input, select, textarea { font: inherit; color: inherit; }
           <p>Nous travaillons à l’heure GMT : une à deux heures de décalage avec Paris, Bruxelles, Genève et Luxembourg. Pour le Québec, la production avance pendant votre nuit.</p>
         </article>
         <article>
-          <h3>Une agence établie derrière le studio</h3>
-          <p>Signature Studio fait partie de Dream Signature, agence de communication fondée en 2021 à Ouagadougou, qui conçoit des supports pour des entreprises, des institutions, des ONG et des projets de coopération internationale. Contrat d’abonnement, facture et virement en euros.</p>
+          <h3>Un cadre clair</h3>
+          <p>Contrat d’abonnement, facture et virement bancaire en euros. Nous signons un accord de confidentialité sur simple demande.</p>
         </article>
+      </div>
+      <div class="ds">
+        <div>
+          <img class="logo-l" src="img/dream-signature.webp" width="640" height="362" alt="Dream Signature, Make it come true !" loading="lazy" decoding="async">
+          <img class="logo-d" src="img/dream-signature-clair.webp" width="640" height="362" alt="Dream Signature, Make it come true !" loading="lazy" decoding="async">
+        </div>
+        <div class="ds-txt">
+          <h3>Un studio de Dream Signature</h3>
+          <p>Signature Studio fait partie de Dream Signature, agence de marketing et de communication fondée en 2021 à Ouagadougou. Ses équipes conçoivent des supports pour des entreprises, des institutions, des ONG et des projets de coopération internationale.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -703,6 +780,10 @@ button, input, select, textarea { font: inherit; color: inherit; }
         <details>
           <summary>Que veut dire « file de demandes illimitée » ?</summary>
           <p>Vous pouvez déposer autant de demandes que vous le souhaitez. Le nombre de demandes traitées en même temps dépend de votre formule : une avec Essentiel, deux avec Pro, davantage avec la formule Agence. Une demande complexe peut occuper plusieurs jours.</p>
+        </details>
+        <details>
+          <summary>Travaillez-vous en anglais ?</summary>
+          <p>Oui. Nous concevons vos présentations et vos créations en anglais ou en version bilingue, à partir des textes que vous nous fournissez. Une déclinaison dans l’autre langue compte comme une demande à part dans votre file.</p>
         </details>
         <details>
           <summary>En combien de temps recevez-vous une première version ?</summary>
@@ -775,6 +856,14 @@ button, input, select, textarea { font: inherit; color: inherit; }
             <input type="radio" name="choix" id="c-conseil" value="conseil"><label for="c-conseil">Je ne sais pas encore</label>
           </div>
         </fieldset>
+        <fieldset>
+          <legend>Langue des livrables</legend>
+          <div class="chips">
+            <input type="radio" name="langue" id="l-fr" value="fr" checked><label for="l-fr">Français</label>
+            <input type="radio" name="langue" id="l-en" value="en"><label for="l-en">Anglais</label>
+            <input type="radio" name="langue" id="l-bi" value="bi"><label for="l-bi">Français et anglais</label>
+          </div>
+        </fieldset>
         <div class="row2">
           <div class="field">
             <label for="d-nom">Nom et prénom</label>
@@ -830,7 +919,8 @@ button, input, select, textarea { font: inherit; color: inherit; }
     <div class="foot-top">
       <div>
         <a class="brand" href="#haut"><span class="mk" aria-hidden="true"></span>Signature Studio</a>
-        <span class="by">un studio de Dream Signature</span>
+        <span class="by">un studio de</span>
+        <img class="foot-logo" src="img/dream-signature-clair.webp" width="640" height="362" alt="Dream Signature" loading="lazy" decoding="async">
       </div>
       <div class="foot-contact">
         <span>WhatsApp : <a href="https://wa.me/22657469947" target="_blank" rel="noopener">+226 57 46 99 47</a></span>
@@ -897,7 +987,9 @@ button, input, select, textarea { font: inherit; color: inherit; }
     conseil: "un conseil pour choisir la bonne formule"
   };
   var COURT = { test: "test à 290 €", essentiel: "formule Essentiel", pro: "formule Pro", agence: "formule Agence", conseil: "demande d’information" };
+  var LANGUE = { fr: "français", en: "anglais", bi: "français et anglais" };
   function choix() { var r = form.querySelector('input[name="choix"]:checked'); return r ? r.value : "conseil"; }
+  function langue() { var r = form.querySelector('input[name="langue"]:checked'); return r ? r.value : "fr"; }
   function val(el) { return el.value.trim(); }
   function texte() {
     var nom = val(F.nom), org = val(F.org), pays = F.pays.value, msg = val(F.msg), mail = val(F.email);
@@ -907,6 +999,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
     if (pays) qui += " (" + pays + ")";
     l.push(qui + (nom || org || pays ? "." : ""));
     l.push("Ma demande concerne " + LIB[choix()] + ".");
+    l.push("Langue des livrables : " + LANGUE[langue()] + ".");
     if (msg) { l.push(""); l.push("Mon besoin : " + msg); }
     if (mail) { l.push(""); l.push("Mon e-mail : " + mail); }
     return l.join("\n");
