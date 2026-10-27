@@ -378,6 +378,9 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .chips label:hover { border-color: var(--muted); }
 .chips input:checked + label { background: var(--btn); border-color: var(--btn); color: var(--on-btn); }
 .chips input:focus-visible + label { outline: 2px solid var(--focus); outline-offset: 2px; }
+.form .check { display: flex; align-items: center; gap: 10px; margin-top: 12px; }
+.form .check input { flex: none; width: 18px; height: 18px; margin: 0; accent-color: var(--btn); }
+.form .check label { margin: 0; font-size: 14px; font-weight: 500; }
 .row2 { display: grid; gap: 18px; grid-template-columns: minmax(0, 1fr); }
 @media (min-width: 620px) { .row2 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .field { min-width: 0; }
@@ -590,7 +593,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
       </div>
       <div class="langs">
         <span class="lg" lang="fr">FR</span><span class="lg" lang="en">EN</span>
-        <p>Vos présentations et vos créations en français, en anglais ou en version bilingue, à partir de vos textes.</p>
+        <p>Vos présentations et vos créations en français, en anglais ou en version bilingue. Vos textes n’existent que dans une langue ? Nous les traduisons, en option.</p>
       </div>
       <p class="note">En complément : visuels pour les réseaux sociaux, publicités digitales, affiches, kakémonos, flyers, petites animations et vidéos courtes.</p>
     </div>
@@ -710,6 +713,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
           <a class="btn btn-line" href="#demande" data-choix="agence">Choisir Agence</a>
         </article>
       </div>
+      <p class="note">En option, sur devis : traduction de vos textes du français vers l’anglais ou de l’anglais vers le français.</p>
     </div>
   </section>
 
@@ -743,7 +747,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
       <div class="duo">
         <article>
           <h3>En français et en anglais</h3>
-          <p>Briefs et échanges en français. Vos livrables en français, en anglais ou bilingues, avec une vérification orthographique avant chaque envoi.</p>
+          <p>Briefs et échanges en français. Vos livrables en français, en anglais ou bilingues, avec une vérification orthographique avant chaque envoi. Nous pouvons aussi traduire vos textes.</p>
         </article>
         <article>
           <h3>Un chef de projet qui connaît vos documents</h3>
@@ -783,7 +787,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
         </details>
         <details>
           <summary>Travaillez-vous en anglais ?</summary>
-          <p>Oui. Nous concevons vos présentations et vos créations en anglais ou en version bilingue, à partir des textes que vous nous fournissez. Une déclinaison dans l’autre langue compte comme une demande à part dans votre file.</p>
+          <p>Oui. Nous concevons vos présentations et vos créations en anglais ou en version bilingue. Si vos textes n’existent qu’en français ou qu’en anglais, nous pouvons les traduire : la traduction est proposée en option, sur devis. La mise en page d’une version dans l’autre langue compte comme une demande à part dans votre file.</p>
         </details>
         <details>
           <summary>En combien de temps recevez-vous une première version ?</summary>
@@ -862,6 +866,10 @@ button, input, select, textarea { font: inherit; color: inherit; }
             <input type="radio" name="langue" id="l-fr" value="fr" checked><label for="l-fr">Français</label>
             <input type="radio" name="langue" id="l-en" value="en"><label for="l-en">Anglais</label>
             <input type="radio" name="langue" id="l-bi" value="bi"><label for="l-bi">Français et anglais</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="d-trad" name="traduction">
+            <label for="d-trad">Mes textes sont à traduire (devis pour la traduction)</label>
           </div>
         </fieldset>
         <div class="row2">
@@ -1000,6 +1008,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
     l.push(qui + (nom || org || pays ? "." : ""));
     l.push("Ma demande concerne " + LIB[choix()] + ".");
     l.push("Langue des livrables : " + LANGUE[langue()] + ".");
+    if ($("d-trad").checked) l.push("Mes textes sont à traduire : je souhaite un devis pour la traduction.");
     if (msg) { l.push(""); l.push("Mon besoin : " + msg); }
     if (mail) { l.push(""); l.push("Mon e-mail : " + mail); }
     return l.join("\n");
