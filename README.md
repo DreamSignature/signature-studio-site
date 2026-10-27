@@ -1,6 +1,6 @@
 # Signature Studio, site public
 
-Site de Signature Studio, studio créatif de Dream Signature, publié par Netlify : https://signaturestudio-website.netlify.app/
+Site de Signature Studio, studio créatif de Dream Signature, publié par Netlify : https://studiodreams.netlify.app/
 
 - `site/index.html` : la page complète.
 - `site/apercu.png` : l'image affichée quand le lien est partagé (WhatsApp, LinkedIn, Facebook).
